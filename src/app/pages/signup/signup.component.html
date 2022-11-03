@@ -1,0 +1,471 @@
+<div class="centContDiv">
+    <img src="assets/_n.gif" width="440px" height="1" alt="" />
+    <!-- pageTitle -->
+    <table cellpadding="0">
+        <tr>
+            <td><img src="assets/titlel.gif" width="12" height="45" alt="" /></td>
+            <td class="titleTxt" width="100%">Sign Up</td>
+            <td><img src="assets/titler.gif" width="12" height="45" alt="" /></td>
+        </tr>
+    </table>
+    <!-- /pageTitle -->
+    <!--p>
+      <center><a href="/signup.php?issnsignup=1" title="You can sign up via Facebook. It means that some information will be taken from your Facebook account (first name, last name, date of birth, etc.)"><img src="/img/signup_sn.png" border=0></a></center>
+      </p-->
+    <p class="sp"></p>
+    <div class="oLine"><span>Personal information:</span></div>
+    <p class="sp"></p>
+    <form onSubmit=return(verify_form())>
+        <input type="hidden" name="cmd" value="dosign" />
+        <input type="hidden" name="paypal" value="1" />
+        <input name="ual" type="hidden" />
+        <input name="ul" type="hidden" />
+        <input name="appn" type="hidden" />
+        <input name="appv" type="hidden" />
+        <input name="ua" type="hidden" />
+
+        <table cellpadding="2" border="0" align="center">
+            <tr>
+                <td valign="top" width="50%">
+                    First Name<EM>*</EM>
+                </td>
+                <td valign="top" width="50%">
+                    <input NAME="fname" SIZE=16 STYLE="width:246" value="" />
+                </td>
+            </tr>
+            <tr>
+                <td valign="top" width="50%">
+                    Last Name<EM>*</EM>
+                </td>
+                <td valign="top" width="50%">
+                    <INPUT NAME="lname" SIZE=16 STYLE="width:246" value="">
+                </td>
+            </tr>
+            <tr>
+                <td valign="top" width="50%">
+                    Country<EM>*</EM>
+                </td>
+                <td valign="top" width="50%">
+                    <select NAME="country" onChange="MkStateValues(this.selectedIndex)">
+                        <option VALUE="">Not Specified
+                        <option VALUE="CA">Canada
+                        <option VALUE="US">United States
+                        <option VALUE="GB">United Kingdom
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td valign="top" width="50%">
+                    Address<EM>*</EM>
+                </td>
+                <td valign="top" width="50%">
+                    <input NAME="street" SIZE=16 STYLE="width:246" value="" />
+                </td>
+            </tr>
+            <tr>
+                <td valign="top" width="50%">
+                    City<EM>*</EM>
+                </td>
+                <td valign="top" width="50%">
+                    <input NAME="city" SIZE=16 STYLE="width:246" value="" />
+                </td>
+            </tr>
+            <tr>
+                <td valign="top" width="50%">
+                    State/Province/County<EM>*</EM>
+                </td>
+                <td valign="top" width="50%">
+                    <select NAME="state">
+                        <option VALUE="">Not Specified
+                        <option VALUE="AL">Alabama
+                        <option VALUE="AK">Alaska
+                        <option VALUE="AZ">Arizona
+                        <option VALUE="AR">Arkansas
+                        <option VALUE="CA">California
+                        <option VALUE="CO">Colorado
+                        <option VALUE="CT">Connecticut
+                        <option VALUE="DE">Delaware
+                        <option VALUE="DC">District of Columbia (Washington DC)
+                        <option VALUE="FL">Florida
+                        <option VALUE="GA">Georgia
+                        <option VALUE="HI">Hawaii
+                        <option VALUE="ID">Idaho
+                        <option VALUE="IL">Illinois
+                        <option VALUE="IN">Indiana
+                        <option VALUE="IA">Iowa
+                        <option VALUE="KS">Kansas
+                        <option VALUE="KY">Kentucky
+                        <option VALUE="LA">Louisiana
+                        <option VALUE="ME">Maine
+                        <option VALUE="MD">Maryland
+                        <option VALUE="MA">Massachusetts
+                        <option VALUE="MI">Michigan
+                        <option VALUE="MN">Minnesota
+                        <option VALUE="MS">Mississippi
+                        <option VALUE="MO">Missouri
+                        <option VALUE="MT">Montana
+                        <option VALUE="NE">Nebraska
+                        <option VALUE="NV">Nevada
+                        <option VALUE="NH">New Hampshire
+                        <option VALUE="NJ">New Jersey
+                        <option VALUE="NM">New Mexico
+                        <option VALUE="NY">New York
+                        <option VALUE="NC">North Carolina
+                        <option VALUE="ND">North Dakota
+                        <option VALUE="OH">Ohio
+                        <option VALUE="OK">Oklahoma
+                        <option VALUE="OR">Oregon
+                        <option VALUE="PA">Pennsylvania
+                        <option VALUE="RI">Rhode Island
+                        <option VALUE="SC">South Carolina
+                        <option VALUE="SD">South Dakota
+                        <option VALUE="TN">Tennessee
+                        <option VALUE="TX">Texas
+                        <option VALUE="UT">Utah
+                        <option VALUE="VT">Vermont
+                        <option VALUE="VA">Virginia
+                        <option VALUE="WA">Washington
+                        <option VALUE="WV">West Virginia
+                        <option VALUE="WI">Wisconsin
+                        <option VALUE="WY">Wyoming
+                        <option VALUE="">-------------------
+                        <option VALUE=""> Canadian provinces:
+                        <option VALUE="AB">Alberta
+                        <option VALUE="BC">British Columbia
+                        <option VALUE="MB">Manitoba
+                        <option VALUE="NB">New Brunswick
+                        <option VALUE="NL">Newfoundland and Labrador
+                        <option VALUE="NS">Nova Scotia
+                        <option VALUE="NT">Northwest Territories
+                        <option VALUE="NU">Nunavut
+                        <option VALUE="ON">Ontario
+                        <option VALUE="PE">Prince Edward Island
+                        <option VALUE="QC">Quebec
+                        <option VALUE="SK">Saskatchewan
+                        <option VALUE="YT">Yukon
+                        <option VALUE="">-------------
+                        <option VALUE=""> UK counties:
+                        <option value="01">Avon</option>
+                        <option value="02">Bedfordshire</option>
+                        <option value="03">Berkshire</option>
+                        <option value="04">Bristol
+                        <option value="05">Buckinghamshire
+                        <option value="06">Cambridgeshire
+                        <option value="07">Cheshire
+                        <option value="08">Cleveland
+                        <option value="09">Cornwall
+                        <option value="10">Cumbria
+                        <option value="11">Derbyshire
+                        <option value="12">Devon
+                        <option value="13">Dorset
+                        <option value="14">Durham
+                        <option value="15">East Riding of Yorkshire
+                        <option value="16">East Sussex
+                        <option value="17">Essex
+                        <option value="18">Gloucestershire
+                        <option value="19">Greater Manchester
+                        <option value="20">Hampshire
+                        <option value="21">Herefordshire
+                        <option value="22">Hertfordshire
+                        <option value="23">Humberside
+                        <option value="24">Isle of Wight
+                        <option value="25">Isles of Scilly
+                        <option value="26">Kent
+                        <option value="27">Lancashire
+                        <option value="28">Leicestershire
+                        <option value="29">Lincolnshire
+                        <option value="30">London
+                        <option value="31">Merseyside
+                        <option value="32">Middlesex
+                        <option value="33">Norfolk
+                        <option value="34">North Yorkshire
+                        <option value="35">Northamptonshire
+                        <option value="36">Northumberland
+                        <option value="37">Nottinghamshire
+                        <option value="38">Oxfordshire
+                        <option value="39">Rutland
+                        <option value="40">Shropshire
+                        <option value="41">Somerset
+                        <option value="42">South Yorkshire
+                        <option value="42">Staffordshire
+                        <option value="44">Suffolk
+                        <option value="45">Surrey
+                        <option value="46">Tyne and Wear
+                        <option value="47">Warwickshire
+                        <option value="48">West Midlands
+                        <option value="49">West Sussex
+                        <option value="50">West Yorkshire
+                        <option value="51">Wiltshire
+                        <option value="52">Worcestershire
+                        <option value="">-- Northern Ireland --
+                        <option value="53">Antrim
+                        <option value="54">Armagh
+                        <option value="55">Down
+                        <option value="56">Fermanagh
+                        <option value="57">Londonderry
+                        <option value="58">Tyrone
+                        <option value="">-- Scotland --
+                        <option value="59">Aberdeen City
+                        <option value="60">Aberdeenshire
+                        <option value="61">Angus
+                        <option value="62">Argyll and Bute
+                        <option value="63">Borders
+                        <option value="64">Clackmannan
+                        <option value="65">Dumfries and Galloway
+                        <option value="66">Dundee (City of)
+                        <option value="67">East Ayrshire
+                        <option value="68">East Dunbartonshire
+                        <option value="69">East Lothian
+                        <option value="70">East Renfrewshire
+                        <option value="71">Edinburgh (City of)
+                        <option value="72">Falkirk
+                        <option value="73">Fife
+                        <option value="74">Glasgow (City of)
+                        <option value="75">Highland
+                        <option value="76">Inverclyde
+                        <option value="77">Midlothian
+                        <option value="78">Moray
+                        <option value="79">North Ayrshire
+                        <option value="80">North Lanarkshire
+                        <option value="81">Orkney
+                        <option value="82">Perthshire and Kinross
+                        <option value="83">Renfrewshire
+                        <option value="84">Shetland
+                        <option value="85">South Ayrshire
+                        <option value="86">South Lanarkshire
+                        <option value="87">Stirling
+                        <option value="88">West Dunbartonshire
+                        <option value="89">West Lothian
+                        <option value="90">Western Isles
+                        <option value="">-- Unitary Authorities of Wales --
+                        <option value="91">Blaenau Gwent
+                        <option value="92">Bridgend
+                        <option value="93">Caerphilly
+                        <option value="94">Cardiff
+                        <option value="95">Carmarthenshire
+                        <option value="96">Ceredigion
+                        <option value="97">Conwy
+                        <option value="98">Denbighshire
+                        <option value="A1">Flintshire
+                        <option value="A2">Gwynedd
+                        <option value="A3">Isle of Anglesey
+                        <option value="A4">Merthyr Tydfil
+                        <option value="A5">Monmouthshire
+                        <option value="A6">Neath Port Talbot
+                        <option value="A7">Newport
+                        <option value="A8">Pembrokeshire
+                        <option value="A9">Powys
+                        <option value="B1">Rhondda Cynon Taff
+                        <option value="B2">Swansea
+                        <option value="B3">Tofaen
+                        <option value="B4">The Vale of Glamorgan
+                        <option value="B5">Wrexham
+                        <option value="">-- UK Offshore Dependencies --
+                        <option value="B6">Channel Islands
+                        <option value="B7">Isle of Man
+                        <option VALUE="99">Other
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td valign="top" width="50%">
+                    Zip/Postal code<EM>*</EM>
+                </td>
+                <td valign="top" width="50%">
+                    <INPUT NAME="zip" SIZE=16 STYLE="width:246" value="">
+                </td>
+            </tr>
+            <tr>
+                <td valign="top" width="50%">
+                    Phone<EM>*</EM>
+                </td>
+                <td valign="top" width="50%">
+                    <INPUT NAME="phone" SIZE=15 value="">
+                </td>
+            </tr>
+
+            <tr>
+                <td valign="top" width="50%">
+                    Gender <EM>*</EM>
+                </td>
+                <td valign="top" width="50%">
+                    <select NAME="Gender">
+                        <option VALUE="">Select gender
+                        <option VALUE="Male">Male
+                        <option VALUE="Female">Female
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td valign="top" width="50%">
+                    Birth Date<EM>*</EM>
+                </td>
+                <td valign="top" width="50%">
+                    <select NAME="mon">
+                        <option VALUE="">Month
+                        <option VALUE="1">January
+                        <option VALUE="2">February
+                        <option VALUE="3">March
+                        <option VALUE="4">April
+                        <option VALUE="5">May
+                        <option VALUE="6">June
+                        <option VALUE="7">July
+                        <option VALUE="8">August
+                        <option VALUE="9">September
+                        <option VALUE="10">October
+                        <option VALUE="11">November
+                        <option VALUE="12">December
+                    </select>
+                    <select NAME="day">
+                        <option VALUE="">Day
+                        <option VALUE="1">1
+                        <option VALUE="2">2
+                        <option VALUE="3">3
+                        <option VALUE="4">4
+                        <option VALUE="5">5
+                        <option VALUE="6">6
+                        <option VALUE="7">7
+                        <option VALUE="8">8
+                        <option VALUE="9">9
+                        <option VALUE="10">10
+                        <option VALUE="11">11
+                        <option VALUE="12">12
+                        <option VALUE="13">13
+                        <option VALUE="14">14
+                        <option VALUE="15">15
+                        <option VALUE="16">16
+                        <option VALUE="17">17
+                        <option VALUE="18">18
+                        <option VALUE="19">19
+                        <option VALUE="20">20
+                        <option VALUE="21">21
+                        <option VALUE="22">22
+                        <option VALUE="23">23
+                        <option VALUE="24">24
+                        <option VALUE="25">25
+                        <option VALUE="26">26
+                        <option VALUE="27">27
+                        <option VALUE="28">28
+                        <option VALUE="29">29
+                        <option VALUE="30">30
+                        <option VALUE="31">31
+                    </select>
+                    Year <input name="year" size=4 style="font-size: 9pt; width:60" value="" />
+                </td>
+            </tr>
+        </table>
+        <p class="sp"></p>
+        <div class="oLine"><span>Account information:</span></div>
+        <p class="sp"></p>
+
+        <table cellpadding="2" border="0" align="center">
+            <tr>
+                <td valign="top" width="50%">
+                    E-mail <EM>*</EM> (<a href="javascript:void(0)" onClick="show_emailnote()">Read This</a>)
+                </td>
+                <td valign="top" width="50%">
+                    <INPUT NAME="email" SIZE=16 STYLE="width:246" value="">
+                </td>
+            </tr>
+            <tr>
+                <td valign="top" width="50%">
+                    Confirm E-mail<EM>*</EM>
+                </td>
+                <td valign="top" width="50%">
+                    <INPUT NAME="email1" SIZE=16 STYLE="width:246" value="">
+                </td>
+            </tr>
+            <tr>
+                <td valign="top" width="50%">
+                    Password<EM>*</EM>
+                </td>
+                <td valign="top" width="50%">
+                    <INPUT TYPE="password" NAME="pwd" SIZE=16 STYLE="width:246">
+                </td>
+            </tr>
+            <tr>
+                <td valign="top" width="50%">
+                    Confirm Password<EM>*</EM>
+                </td>
+                <td valign="top" width="50%">
+                    <INPUT TYPE="password" NAME="pwd2" SIZE=16 STYLE="width:246">
+                </td>
+            </tr>
+        </table>
+        <p class="sp"></p>
+        <div class="oLine"></div>
+        <p class="sp"></p>
+        <table cellpadding="2" border="0" align="center">
+
+            <tr>
+                <td>
+                    <INPUT TYPE="Checkbox" NAME="agreerules" VALUE="1">Yes, I agree with <a [routerLink]="['/rule']"
+                        target="_blank">Terms and Conditions</a> of UniqueRewards<EM>*</EM>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    &nbsp;
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <EM>*</EM> - required fields
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    &nbsp;
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div id="g-recaptcha" class="g-recaptcha"></div>
+                    <br>
+
+                    <input TYPE="Submit" NAME="Submit1" VALUE="SIGN UP NOW!">
+                    <!--INPUT TYPE="Reset" NAME="Reset1" VALUE="CLEAR"></center-->
+                </td>
+            </tr>
+        </table>
+    </form>
+
+    <div class="hidden" id="brklnk"></div>
+
+    <div align="center">
+        <p class="vera14">
+            <EM>You will receive an additional 10% CASH BONUS for all offers completed today and tomorrow!</EM>
+        </p>
+    </div>
+    <p class="sp"></p>
+    <div class="oLine"></div>
+    <p class="sp"></p>
+</div>
+<div class="row">
+    <div class="column">
+        <script type="text/javascript"
+            src="https://ads4.krushmedia.com/?c=rtb&amp;m=js&amp;type=s2c&amp;key=fe5c1687e1d07343abc02fb6be1555a7&amp;domain=uniquerewards.com"></script>
+    </div>
+    <div class="column">
+        <SCRIPT language="JavaScript">
+            $(document).ready(function () {
+                var today = new Date();
+                var args = "t=" + today;
+                $('#result_RTB_b2').load("/api/api_rtb.php/ads/kru/300/250/0.1", args, function (response, status, xhr) {
+                    if (status == "error") {
+                        var msg = "Sorry but there was an error: ";
+                        $("#error").html(msg + xhr.status + " " + xhr.statusText);
+                    } else {
+                        var res = document.getElementById('result_RTB_b2').innerHTML;
+                        if (res.indexOf("no bid") != -1) {
+                            document.getElementById('result_RTB_b2').innerHTML = "";
+                            //alert("no bid");
+                        }
+                    }
+                });
+            });
+        </SCRIPT>
+        <div id="result_RTB_b2"></div>
+    </div>
+</div>

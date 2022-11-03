@@ -1,0 +1,254 @@
+<!-- HEAD  -->
+<div class="headDiv">
+  <div style="float:left;">
+    <a [routerLink]="['/home']"><img src="assets/logo.gif" width="277" height="61" alt="Unique Rewards"
+        class="headLogo" /></a>
+  </div>
+  <div style="float:left;margin-left:10px;padding-top:10px"></div>
+  <div style="float:right;padding-top:10px;">
+    <span style="margin-top:30">
+      <a href="#">
+        <img src="assets/ymemj_button.png" border="0" alt="Ymemj" title="Special exclusive offer for students!">
+      </a>
+      <a href="cgi-bin/maina4d4.html?cmd=contests">
+        <img src="assets/contest-button.png" border="0" alt="Contests"></a>
+    </span>
+    &nbsp;&nbsp;
+    <a href="https://twitter.com/uniquerewards" target=_blank>
+      <img src="assets/twitter.png" border=0></a>&nbsp;&nbsp;
+    <a href="https://www.facebook.com/UniqueRewards?sk=wall" target=_blank>
+      <img src="assets/fbook.png" /></a>
+    <iframe
+      src="https://www.facebook.com/plugins/like.php?app_id=128611823882306&amp;href=http%3A%2F%2Fwww.facebook.com%2Funiquerewards&amp;send=false&amp;layout=box_count&amp;width=60&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;font=verdana&amp;height=60"
+      scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:60px; height:60px;"
+      allowTransparency="true">
+    </iframe>
+  </div>
+
+  <div class="ClearDiv"></div>
+
+</div>
+<!-- /HEAD  -->
+
+<!-- MAIN  -->
+<table cellpadding="0" width="100%">
+  <tr>
+    <!-- LEFT -->
+    <td class="contTd" width="255" NoWrap style="padding:35px 0px 20px 15px;" valign="top">
+      <div class="leftDiv3">
+        <div style="padding:20px 20px 0px 0px;">
+          <!-- Login -->
+          <div style="float:left;">
+            <img src="assets/left/login.gif" width="30" height="40" alt="" />
+          </div>
+          <div style="float:left;width:7px;">&nbsp;</div>
+          <div class="leftTitle">User Log In</div> &nbsp;
+          <div class="ClearDiv"></div>
+          <form name="login" id="login_form">
+            <input type="hidden" name="cmd" value="dologin" />
+            <input type="hidden" NAME="v" value="3" />
+            <input type="hidden" name="g-recaptcha-response" id="recaptchaResponse" />
+            <input id="tttt" type="hidden" name="tttt" value="" />
+            <table cellpadding="0" cellspacing="4" style="border-collapse: separate; border-spacing: 4px;"
+              align="right">
+              <tr>
+                <td>E-mail</td>
+                <td style="padding-right:4px;"><input name="login" type="text" style="width:100px" class="txt" /></td>
+              </tr>
+              <tr>
+                <td>Password</td>
+                <td style="padding-right:4px;"><input name="password" type="password" style="width:100px" class="txt" />
+                </td>
+              </tr>
+              <tr>
+                <td colspan="2" align="right" style="padding-right:4px;">
+                  <p class="sm"></p>
+                  <img src="assets/left/blogin.gif" width="160" height="25" alt="Sig In">
+                </td>
+              </tr>
+              <tr>
+                <td colspan="2" style="font-size:4px; height:8px;">&nbsp;</td>
+              </tr>
+              <tr>
+                <td colspan="2" bgcolor="#A6DEDA" background="assets/left/arrow.gif"
+                  style="height:20px; background-repeat:no-repeat;background-position:top right;" align="center"><a
+                    [routerLink]="['/forgetpassword']" class="blackA">Forgot your password?</a></td>
+              </tr>
+            </table>
+          </form>
+          <div class="ClearDiv"></div>
+
+          <!-- /Login -->
+          <p class="sp"></p>
+          <p class="sp"></p>
+          <!-- Testim -->
+          <div style="float:left;"><img src="assets/left/testim.gif" width="30" height="40" alt="" /></div>
+          <div style="float:left;width:7px;">&nbsp;</div>
+          <div class="leftTitle">Testimonials</div>
+          &nbsp;
+          <div class="ClearDiv"></div>
+          <ul class="testim">
+            <li>
+              <p style="display: inline;">I've just signed up for absolutely <br /> free offers and received $105 for
+                <br />
+                two days!
+              </p>
+              <p><span class="grey">Russel<br />Fairfield, OH</span>
+              </p>
+            </li>
+            <li>
+              <p style="display: inline;">This is the easiest way to earn <br /> some additional money for your <br />
+                needs!
+              </p>
+              <p><span class="grey">Jessica<br />Ann Arbor, MI</span>
+              </p>
+            </li>
+          </ul>
+          <div class="ClearDiv"></div>
+          <table cellpadding="0" style="margin-left:25px;">
+            <tr>
+              <td width="165" bgcolor="#A6DEDA" style="height:20px;" align="center">
+                <a [routerLink]="['/testimonial']" class="blackA">Read more</a>
+              </td>
+              <td><img src="assets/left/arrow2.gif" width="8" height="20" alt="" /></td>
+            </tr>
+          </table>
+          <div class="ClearDiv"></div>
+          <p></p>&nbsp;
+
+          <!-- /Testim -->
+          <p class="sp"></p>
+          <div style="float:left;"><img src="assets/left/testim.gif" width="30" height="40" alt="" /></div>
+          <div style="float:left;width:7px;">&nbsp;</div>
+          <div class="leftTitle">Tutorial videos</div>
+          &nbsp;
+          <div class="ClearDiv"></div>
+          <ul class="testim">
+            <li><a href="tutorial.html#1" class="blackA">Getting started</a></li>
+            <li><a href="tutorial.html#2" class="blackA">How to sign up</a></li>
+            <li><a href="tutorial.html#3" class="blackA">How to cash out</a></li>
+            <li><a href="tutorial.html#4" class="blackA">Referrals</a></li>
+          </ul>
+          <div class="ClearDiv"></div>
+          <p></p>&nbsp;
+          &nbsp;
+        </div>
+      </div>
+      <div class="ClearDiv"></div>
+      <p class="sp"></p>
+      <br><br>
+    </td>
+    <!-- /LEFT -->
+
+    <!-- CENTER -->
+    <td class="contTd" width="100%" style="padding:0px 0px 20px 0px;" valign="top">
+      <router-outlet></router-outlet>
+    </td>
+    <!-- /CENTER -->
+
+    <td width="34" NoWrap class="contTd2" valign="bottom">
+      <img src="assets/bugs.jpg" width="34" height="72" alt="" />
+    </td>
+
+    <!-- RIGHT -->
+
+    <td width="170" valign="top" NoWrap class="contTd2" style="padding-top:33px;">
+      <table border="0" bgcolor="#FFFFFF" cellspacing="0" cellpadding="0" width=184 height=364>
+        <tr>
+          <td>
+            <div>
+              <iframe
+                src="https://www.facebook.com/plugins/likebox.php?href=http%3A%2F%2Fwww.facebook.com%2Funiquerewards&amp;width=184&amp;height=364&amp;show_faces=true&amp;colorscheme=light&amp;stream=false&amp;border_color=&amp;header=false&amp;appId=128611823882306"
+                scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:184px; height:364px;"
+                allowTransparency="true"></iframe>
+            </div>
+          </td>
+        </tr>
+      </table>
+      <p class="sp"></p>
+      <!--iframe src="http://www.facebook.com/plugins/likebox.php?href=http%3A%2F%2Fwww.facebook.com%2Funiquerewards&width=170&height=395&show_faces=true&colorscheme=ligth&stream=false&border_color=&header=false" scrolling="no" frameborder="0" allowtransparency="true" style="border:none; overflow:hidden; width:170px; height:395px;"></iframe-->
+
+      <!--Offer-->
+      <div class="cpUp">&nbsp;</div>
+      <div class="cpCont1">
+        <div>
+          <a href="cgi-bin/mainefd3.html?mid=3914" target="_blank">
+            <img src="https://uniquerewards.com/img/profile3.gif" border=0></a>
+        </div>
+        <p>
+        <div class="cPoint">&nbsp;</div>
+        <div class="cText2"><b>UniqueRewards Profile <br /> Survey</b></div>
+        <div class="cText2">UniqueRewards Profile <br /> Survey! <p></p>
+          <table border=0 width=100%>
+            <tr>
+              <td align="left"><a href="cgi-bin/mainefd3.html?mid=3914" target="_blank">Get $0.50
+                  <img src="assets/arr.gif" width="12" height="10" alt="" class="Rimg9"></a></td>
+              <td align="right"></td>
+            </tr>
+          </table>
+        </div>
+        <!--div class="cText2"><p></p></div-->
+        <div class="ClearDiv"></div>
+      </div>
+      <div class="cpDown">&nbsp;</div>
+      <p class="sp"></p>
+      <p class="sp"></p>
+    </td>
+    <!-- /RIGHT -->
+    <td width="25" NoWrap class="contTd2" valign="top">
+    </td>
+  </tr>
+  <!-- BOTTOM LINE -->
+  <tr>
+    <td valign="bottom" bgcolor="#FFFFFF"><img src="assets/bottom/hog.gif" width="83" height="29" alt="" /></td>
+    <td valign="bottom" bgcolor="#FFFFFF" align="right">
+      <img src="assets/bottom/angle1.gif" width="18" height="18" alt="" />
+    </td>
+    <td colspan="3" bgcolor="#BCE8E4">&nbsp;</td>
+  </tr>
+  <!-- /BOTTOM LINE -->
+
+  <!-- BOTTOM Content -->
+  <tr>
+    <td colspan=5>
+      <div class="botDiv">
+        <img src="assets/_n.gif" width="944" height="1" alt="" />
+        <div style="float:left; width:200px;">
+          <div style="float:left;">
+            <img src="assets/bottom/logo.gif" width="38" height="38" alt="UniqueRewards" />
+          </div>
+          <div style="float:left;margin:5px 0px 0px 5px;">&#169; 2007-2022<br />UniqueRewards.com, Inc.</div>
+        </div>
+        <div style="float:right; width:200px; margin-top:10px; white-space:nowrap;">
+          <img src="assets/bottom/relmax.gif" width="19" height="19" alt="Web design by Relmax, Inc."
+            style="vertical-align:middle;margin:0px 3px -2px 0px;" />
+          <a href="http://www.relmax.com/" target=_blank class="greyA">Web design by Haseeb, Inc.</a>
+        </div>
+        <div class="vera14" style="text-align:center;margin-top:10px; white-space:nowrap;">
+          <a [routerLink]="['/rule']" class="blackA" style="margin-right:30px;">Rules</a>
+          <a [routerLink]="['/faq']" class="blackA" style="margin-right:30px;">FAQ</a>
+          <a [routerLink]="['/privacy']" class="blackA" style="margin-right:30px;">Privacy Policy</a>
+          <a [routerLink]="['/contact']" class="blackA" style="margin-right:30px;">Contact Us</a>
+          <a href="hts.html?cmd=guide" class="blackA" style="margin-right:30px;">Guide</a>
+          <a [routerLink]="['/about']" class="blackA" style="margin-right:30px;">About Us</a>
+          <a href='https://forum.uniquerewards.com/' class="blackA" style="margin-right:30px;" target=_new>Forum</a>
+        </div>
+        &nbsp;
+      </div>
+      <div align="right">
+        <a style="text-decoration:none; color:#000000; font-size:8pt" [routerLink]="['/home']">Online Rewards</a>,
+        <a style="text-decoration:none; color:#000000; font-size:8pt" [routerLink]="['/home']">Get Paid to Surveys</a>,
+        <a style="text-decoration:none; color:#000000; font-size:8pt" [routerLink]="['/home']">Cash for Online
+          Surveys</a>,
+        <a style="text-decoration:none; color:#000000; font-size:8pt" [routerLink]="['/signup']">Sign up for Offers</a>,
+        <a style="text-decoration:none; color:#000000; font-size:8pt" [routerLink]="['/signup']">Make Surveys
+          Online</a>,
+        <a style="text-decoration:none; color:#000000; font-size:8pt" [routerLink]="['/contact']">Make Surveys
+          Online</a>
+      </div>
+
+      <div class="ClearDiv"></div>
+      <!-- /BOTTOM -->
+    </td>
+  </tr>
+</table>

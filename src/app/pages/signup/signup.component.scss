@@ -1,0 +1,23 @@
+.row {
+    margin: 0 -10px;
+}
+
+.row:before,
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.row .column {
+    float: left;
+    width: 33.33%;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    padding: 0 10px;
+}
+
+.row .column iframe {
+    width: 100% !important;
+}

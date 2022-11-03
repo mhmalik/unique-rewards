@@ -1,0 +1,100 @@
+<div class="centContDiv">
+    <img src="assets/_n.gif" width="440px" height="1" alt="" />
+    <div class="titleTxt1">About Us</div>
+    <div class="DotDiv"></div>
+    <p class="sp"></p>
+    <table border=0 width="100%" cellpadding="0" cellspacing="0">
+        <tr>
+            <td valign="top">
+                <img src="assets/aboutus1.png" border="0">
+            </td>
+            <td width="20"></td>
+            <td>
+                <span class="vera14">
+                    UniqueRewards is an effective and fascinating way to earn some extra cash without leaving your home.
+                    We've been in business since 2003 and have proven our loyalty, reliability and first-class support
+                    to our members.
+                    <p class="sp"></p>
+                    <div class="treb18b green">Our advantages:</div>
+                    <p class="sp"></p>
+                    <span class="vera14">
+                        <li> quick and effective customer support</li>
+                        <li> a great variety of always new offers and surveys</li>
+                        <li> a wide range of coupons for a great variety of goods</li>
+                        <li> weekly payments via both PayPal and check</li>
+                        <li> free contests with highly rewarding prizes</li>
+                        <li> a beneficial referral system</li>
+                        <li> Facebook integration. You can share your referral link via F-share</li>
+                        function easily
+                        <li> a unique Click Cash Section. Get $0.01 just for 1 click</li>
+                        <li> a wide range of ways to earn. You will get cash for taking surveys online, completing</li>
+                        offers, reading emails, visiting websites and shopping online
+                    </span>
+                    <li> our members receive their online rewards only in cash</li>
+                    <p class="sp"></p>
+                    <span class="vera14">
+                        Our members can always find something special that works for them.&nbsp;<a
+                            [routerLink]="['/signup']">Join us</a>.
+                        <p class="sp"></p>
+                        <span class="vera14">
+                            Please don't hesitate to <a [routerLink]="['/contact']">contact</a> us if you have
+                            any
+                            questions.
+                        </span>
+                    </span>
+                </span>
+            </td>
+            <td width="20"></td>
+        </tr>
+    </table>
+    <p class="sp"></p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <style>
+        .row {
+            margin: 0 -10px;
+        }
+
+        .row:before,
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        .row .column {
+            float: left;
+            width: 50%;
+            box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            padding: 0 10px;
+        }
+
+        .row .column iframe {
+            width: 100% !important;
+        }
+    </style>
+    <div class="row">
+        <div class="column">
+            <SCRIPT language="JavaScript">
+                $(document).ready(function () {
+                    var today = new Date();
+                    var args = "t=" + today;
+                    $('#result_RTB_b2').load("/api/api_rtb.php/ads/kru/300/250/0.1", args, function (response, status, xhr) {
+                        if (status == "error") {
+                            var msg = "Sorry but there was an error: ";
+                            $("#error").html(msg + xhr.status + " " + xhr.statusText);
+                        } else {
+                            var res = document.getElementById('result_RTB_b2').innerHTML;
+                            if (res.indexOf("no bid") != -1) {
+                                document.getElementById('result_RTB_b2').innerHTML = "";
+                                //alert("no bid");
+                            }
+                        }
+                    });
+                });
+            </SCRIPT>
+            <div id="result_RTB_b2"></div>
+        </div>
+    </div>
